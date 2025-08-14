@@ -9,5 +9,6 @@ converter.optimizations = [tf.lite.Optimize.DEFAULT]  # Quantization for size/pe
 tflite_model = converter.convert()
 
 # Save the TFLite model
-with open('fer_model.tflite', 'wb') as f:
+with open('fer_model_cnn.tflite', 'wb') as f:
+
     f.write(tflite_model)
